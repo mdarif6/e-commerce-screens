@@ -1,28 +1,35 @@
-.container {
+* {
+  box-sizing: border-box;
+}
+
+.h-home-container {
   display: grid;
   height: 100vh;
   grid-gap: 10px;
   grid-template-areas:
-    "header"
-    "main"
+    "home-header"
+    "home-categories"
+    "home-main"
     "footer";
 }
 
-header {
-  background-color: lightgray;
-  grid-area: header;
+.home-header {
+  background-color: rgb(216, 204, 204);
+  grid-area: home-header;
 }
 
-main {
-  background-color: maroon;
-  grid-area: main;
+.home-categories {
+  padding: 0rem 7rem 0 7rem;
+  grid-area: home-categories;
+}
+.home-main {
+  grid-area: home-main;
 }
 footer {
-  background-color: red;
   grid-area: footer;
 }
 
-.h-header {
+.home-header {
   margin-bottom: auto;
 }
 .h-nav-container {
@@ -30,7 +37,9 @@ footer {
   justify-content: space-between;
 }
 .h-logo {
-  padding: 2rem 0 0 2rem;
+  padding: 3rem 0 0 2rem;
+  font-weight: bold;
+  color: rgb(201, 18, 18);
 }
 
 .search-wrapper {
@@ -74,4 +83,68 @@ footer {
   background-color: gray;
   color: white;
   cursor: pointer;
+}
+
+.home-categories {
+  text-align: center;
+  padding: 0 0 1rem 0;
+}
+
+.h-text-container {
+  background-color: rgb(201, 18, 18);
+}
+.h-categ-text {
+  padding: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.h-categ-btn {
+  padding-bottom: 1rem;
+}
+.h-categ-btn .h-nav-btn {
+  padding: 1rem 2rem;
+  background-color: white;
+  color: rgb(201, 18, 18);
+  font-weight: bold;
+}
+.h-img-container {
+  padding: 2rem 7rem;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.footer-image-container {
+  display: flex;
+  padding: 0 7rem 1rem 7rem;
+  gap: 2rem;
+}
+
+.h-image-wrapper {
+  padding: 2rem;
+  flex-basis: 0;
+  flex-grow: 1;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+
+  background-color: gray;
+  color: white;
+}
+
+.footer-imgone {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.footer-imgone img {
+  width: 100%;
+}
+.footer-img-text {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.footer-img-text h4 {
+  padding-bottom: 4.8rem;
 }

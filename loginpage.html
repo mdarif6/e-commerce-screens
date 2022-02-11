@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="h-home-container">
+      <header class="home-header">
+        <nav class="h-nav-container">
+          <div class="h-logo">My Web Site</div>
+          <div class="search-wrapper">
+            <div class="h-search-box">
+              <a class="h-search-button" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+              <input
+                class="h-search-text"
+                type="text"
+                name="name"
+                placeholder="search"
+              />
+            </div>
+          </div>
+          <div class="h-nav-icons">
+            <button class="h-nav-btn">Login</button>
+            <div><i class="fas fa-heart"></i></div>
+            <div><i class="fas fa-shopping-cart"> cart</i></div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="home-main">
+        <div class="h-login-container">
+          <h2>Login</h2>
+          <form action="inputs">
+            <div class="h-input-text">
+              <label>Email address</label>
+              <input type="text" placeholder="xyz@email.com" />
+            </div>
+
+            <div class="h-input-text">
+              <label>Password</label>
+              <input type="password" placeholder="***************" />
+            </div>
+            <div class="login-check">
+              <div>
+                <input
+                  type="checkbox"
+                  name="consent"
+                  id="consent"
+                  value="remember"
+                />
+                <label for="consent">Remember me</label>
+              </div>
+              <div>
+                <a href="#">Forgot Your Password ?</a>
+              </div>
+            </div>
+            <button class="h-login-btn">Login</button>
+            <div class="login-bottom-text">
+              Create New Account
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

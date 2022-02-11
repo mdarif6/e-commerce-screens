@@ -22,12 +22,13 @@
 
 .h-aside {
   grid-area: h-aside;
-  background-color: gray;
+  /* background-color: gray; */
   width: 100%;
 }
 
 .h-main {
   grid-area: h-main;
+  background-color: rgb(247, 242, 242);
 }
 .h-footer {
   grid-area: h-footer;
@@ -50,27 +51,52 @@
 }
 
 .h-main-grid {
+  padding: 0 1.5rem 0 1.5rem;
   margin: auto;
   display: grid;
-  gap: 0.313rem;
+  gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
 }
 .h-grid-product {
+  position: relative;
   width: 100%;
-
-  border: 0.063rem solid;
-
+  /* border: 0.063rem solid; */
   justify-content: center;
   align-items: center;
+  background-color: white;
+}
+
+.h-product-icon i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 0.2rem;
+  right: 0.2rem;
+  color: red;
+  background-color: white;
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .h-grid-product img {
   width: 100%;
 }
 
-.h-product-text {
+.h-product-bottom {
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
-  align-items: center;
+}
+
+.h-product-bottom h3 {
+  line-height: 0;
+}
+
+.h-product-button {
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 1rem;
+  background-color: gray;
+  color: white;
+  margin-top: 0.5rem;
 }

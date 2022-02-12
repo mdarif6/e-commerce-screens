@@ -15,14 +15,15 @@
 }
 
 .h-header {
+  background-color: rgb(252, 252, 252);
   grid-area: h-header;
-  background-color: yellow;
-  margin-bottom: auto;
+  box-shadow: 0 6px 6px -4px var(--pd-default-color);
 }
 
 .h-aside {
   grid-area: h-aside;
-  /* background-color: gray; */
+  padding: 0 2rem 0 2rem;
+  background-color: rgb(247, 242, 242);
   width: 100%;
 }
 
@@ -30,20 +31,27 @@
   grid-area: h-main;
   background-color: rgb(247, 242, 242);
 }
+
+.h-main-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
 .h-footer {
   grid-area: h-footer;
   background-color: red;
 }
 
 .aside-top-heading {
-  padding: 0 2rem 0 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
 }
 
-.slider-container {
-  width: auto;
-}
+/* .slider-container {
+  width: 100%;
+} */
 
 .lable-container {
   display: flex;
@@ -99,4 +107,25 @@
   background-color: gray;
   color: white;
   margin-top: 0.5rem;
+}
+
+/* Wish List */
+
+.h-wish-container {
+  display: grid;
+  height: 100vh;
+  grid-gap: 10px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "h-header h-header"
+    "h-main h-main"
+    "h-footer h-footer";
+}
+
+.h-main-wishgrid {
+  padding: 1rem 3rem 9rem 3rem;
+  /* margin: auto; */
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
 }

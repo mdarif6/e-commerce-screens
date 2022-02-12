@@ -1,3 +1,9 @@
+@import url(color.css);
+
+body {
+  margin: 0;
+  padding: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -8,25 +14,31 @@
   grid-gap: 10px;
   grid-template-areas:
     "home-header"
-    "home-categories"
+    "h-home-banner"
     "home-main"
-    "footer";
+    "h-home-belowimg"
+    "h-footer";
 }
 
 .home-header {
-  background-color: rgb(216, 204, 204);
+  background-color: rgb(252, 252, 252);
   grid-area: home-header;
+  box-shadow: 0 6px 6px -4px var(--pd-default-color);
 }
 
-.home-categories {
-  padding: 0rem 7rem 0 7rem;
-  grid-area: home-categories;
+.h-home-banner {
+  text-align: center;
+  padding: 1rem 7rem 1rem 7rem;
 }
 .home-main {
   grid-area: home-main;
 }
-footer {
-  grid-area: footer;
+.h-home-belowimg {
+  grid-area: h-home-belowimg;
+}
+.h-footer {
+  grid-area: h-footer;
+  background-color: rgb(201, 18, 18);
 }
 
 .home-header {
@@ -37,16 +49,20 @@ footer {
   justify-content: space-between;
 }
 .h-logo {
-  padding: 3rem 0 0 2rem;
+  padding: 3rem 0 2rem 2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: rgb(201, 18, 18);
 }
-
+.h-logo a {
+  text-decoration: none;
+  color: rgb(201, 18, 18);
+}
 .search-wrapper {
   padding: 2rem 2rem;
 }
 .h-search-box {
-  background-color: rgb(241, 234, 234);
+  background-color: rgb(231, 231, 229);
   display: flex;
   align-items: center;
   padding: 10px;
@@ -63,7 +79,6 @@ footer {
 
 .h-search-text {
   padding-right: 8rem;
-
   border: none;
   background: none;
   outline: none;
@@ -71,23 +86,25 @@ footer {
 }
 
 .h-nav-icons {
+  color: var(--pd-default-color);
+  cursor: pointer;
   font-size: 1.5rem;
   display: flex;
   padding: 2rem 4rem 2rem 0;
   gap: 20px;
   align-items: center;
 }
+
+.h-nav-icons a {
+  color: var(--pd-default-color);
+}
 .h-nav-btn {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: gray;
+  background-color: var(--pd-default-color);
   color: white;
   cursor: pointer;
-}
-
-.home-categories {
-  text-align: center;
-  padding: 0 0 1rem 0;
+  border: none;
 }
 
 .h-text-container {
@@ -103,20 +120,26 @@ footer {
   padding-bottom: 1rem;
 }
 .h-categ-btn .h-nav-btn {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
+  margin: 0 0.5rem 0 0.5rem;
   background-color: white;
   color: rgb(201, 18, 18);
   font-weight: bold;
 }
+
+/* .h-categ-btn .h-nav-btn a {
+  text-decoration: none;
+  color: rgb(201, 18, 18);
+} */
 .h-img-container {
-  padding: 2rem 7rem;
+  padding: 0 7rem;
 }
 
 .main-image {
   width: 100%;
 }
 
-.footer-image-container {
+.below-image-container {
   display: flex;
   padding: 0 7rem 1rem 7rem;
   gap: 2rem;
@@ -129,24 +152,50 @@ footer {
   display: flex;
   gap: 1rem;
   width: 100%;
-
   background-color: gray;
   color: white;
 }
 
-.footer-imgone {
+.below-imgone {
   flex-basis: 0;
   flex-grow: 1;
 }
-.footer-imgone img {
+.below-imgone img {
   width: 100%;
 }
-.footer-img-text {
+.below-img-text {
   flex-grow: 1;
   flex-basis: 0;
 }
-.footer-img-text h4 {
+.below-img-text h4 {
   padding-bottom: 4.8rem;
+}
+
+/* footer */
+
+.h-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-heading,
+.h-footer small {
+  color: white;
+  padding: 0.7rem 0;
+}
+.h-footer-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.h-footer-icons .link > i {
+  padding-bottom: 0.5rem;
+  font-size: 1.7rem;
+  align-items: center;
+  justify-items: center;
+  color: white;
 }
 
 /* Login Page */
@@ -170,6 +219,11 @@ footer {
 .login-check,
 .login-bottom-text {
   font-size: 1.2rem;
+}
+
+.login-bottom-text a {
+  text-decoration: none;
+  color: #00bfff;
 }
 .h-input-text input {
   /* border: none; */
@@ -208,4 +262,80 @@ footer {
   justify-content: center;
   gap: 0.5rem;
   padding-top: 1rem;
+}
+
+/* cart page */
+
+.h-cart-container {
+  padding: 0 3rem 0 9rem;
+  display: flex;
+}
+
+.h-imagecart-wrapper {
+  width: 40%;
+  display: flex;
+  background-color: rgb(226, 220, 220);
+}
+
+.image-cart img {
+  width: 100%;
+}
+.image-text {
+  width: 100%;
+  padding: 1.5rem 2rem 0 2rem;
+}
+.image-text h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0.3rem;
+}
+.image-cart-btn {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.image-cart-btn button {
+  padding: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.remove-btn {
+  background-color: gray;
+  color: white;
+}
+
+.h-price-box {
+  width: 30%;
+
+  background-color: rgb(247, 244, 244);
+  padding: 1.5rem;
+  line-height: 3rem;
+}
+
+.item-pricee {
+  display: flex;
+  flex-direction: row;
+}
+.total-price {
+  font-weight: bold;
+}
+
+.item-pricee p:last-child {
+  margin-left: auto;
+}
+.cart-price {
+  font-weight: bold;
+}
+
+.blank-div {
+  border: 1px solid gray;
+}
+
+.price-btn {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #00bfff;
+  color: white;
 }

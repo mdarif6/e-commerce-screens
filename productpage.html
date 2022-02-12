@@ -19,7 +19,7 @@
     <div class="h-container">
       <header class="h-header">
         <nav class="h-nav-container">
-          <div class="h-logo">My Web Site</div>
+          <div class="h-logo"><a href="/index.html">My Web Site</a></div>
           <div class="search-wrapper">
             <div class="h-search-box">
               <a class="h-search-button" href="#">
@@ -34,9 +34,18 @@
             </div>
           </div>
           <div class="h-nav-icons">
-            <button class="h-nav-btn">Login</button>
-            <div><i class="fas fa-heart"></i></div>
-            <div><i class="fas fa-shopping-cart"> cart</i></div>
+            <a href="/loginpage.html">
+              <button class="h-nav-btn">Login</button></a
+            >
+
+            <div>
+              <a href="/wishlist.html"><i class="fas fa-heart"></i></a>
+            </div>
+            <div>
+              <a href="/cartpage.html">
+                <i class="fas fa-shopping-cart"> cart</i>
+              </a>
+            </div>
           </div>
         </nav>
       </header>
@@ -133,6 +142,9 @@
         </div>
       </aside>
       <main class="h-main">
+        <div class="h-main-heading">
+          Showing All Proucts <small>(Showing 20 products)</small>
+        </div>
         <div class="h-main-grid">
           <div class="h-grid-product">
             <img src="/images/Jeans1.JPG" alt="" />
@@ -215,7 +227,29 @@
         </div>
       </main>
 
-      <footer class="h-footer"></footer>
+      <footer class="h-footer">
+        <div class="footer-heading">Social Media Presence</div>
+        <ul class="h-footer-icons">
+          <li class="h-footer-icons social-icon">
+            <a class="link" href="https://github.com/mdarif6"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li class="h-footer-icons social-icon">
+            <a class="link" href="https://www.linkedin.com/in/mdarifdev/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="h-footer-icons social-icon">
+            <a class="link" href="https://twitter.com/mdarifdev"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div>
+          <small>&copy; Md Arif 2022 </small>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

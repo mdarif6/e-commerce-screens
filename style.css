@@ -1,4 +1,5 @@
 @import url(color.css);
+@import url(product_page.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
@@ -9,11 +10,10 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  text-align: center;
-}
 .ha-content > * {
   padding: 0.625rem;
+  text-align: center;
+  text-align: center;
 }
 
 .ha-content {
@@ -112,6 +112,7 @@ body {
   padding-bottom: 1rem;
 }
 .h-categ-btn .h-nav-btn {
+  cursor: pointer;
   border: none;
   padding: 0.5rem 2rem;
   margin: 0 0.5rem 0 0.5rem;

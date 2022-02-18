@@ -1,5 +1,7 @@
 @import url(color.css);
 @import url(product_page.css);
+@import url(login_page.css);
+@import url(signup_page.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
@@ -34,13 +36,20 @@
 /* Header */
 
 .ha-header {
+  padding-left: 3rem;
   grid-area: header;
   align-items: center;
   justify-content: center;
   display: flex;
-  justify-content: space-between;
   background-color: var(--ha-light-background-color);
   box-shadow: 0 0.375rem 0.375rem -0.25rem var(--ha-primary-color);
+}
+
+.ha-header div:last-child {
+  margin-left: auto;
+}
+.ha-logo img {
+  width: 80px;
 }
 .ha-logo a {
   font-weight: bold;

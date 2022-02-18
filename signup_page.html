@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login</title>
     <link
       rel="stylesheet"
       href="https://pandaui.netlify.app/components/pandaui.css"
     />
     <link rel="stylesheet" href="/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -19,8 +20,8 @@
     />
   </head>
   <body>
-    <div class="ha-content">
-      <header class="ha-header">
+    <div class="ha-signup-content">
+      <header class="ha-header-gtr">
         <div class="ha-logo">
           <a href="/index.html"><img src="/images/logo.png" alt="" /></a>
         </div>
@@ -55,61 +56,43 @@
           </div>
         </div>
       </header>
+      <main class="ha-login-gtr">
+        <div class="ha-login-window">
+          <div class="h-login-container">
+            <h2>Signup</h2>
+            <form action="inputs">
+              <div class="h-input-text">
+                <label>Email address</label>
+                <input type="text" placeholder="xyz@email.com" />
+              </div>
 
-      <section class="ha-home-banner">
-        <div class="h-categ-text">Proclaim your love with our gifts!</div>
-        <div class="h-categ-btn">
-          <a href="/product_page.html">
-            <button class="h-nav-btn">Men</button></a
-          >
-          <a href="/product_page.html"
-            ><button class="h-nav-btn">Women</button></a
-          >
-          <a href="/product_page.html"
-            ><button class="h-nav-btn">Kids</button></a
-          >
-          <a href="/product_page.html"
-            ><button class="h-nav-btn">Indie</button></a
-          >
-        </div>
-      </section>
-      <main class="home-main">
-        <div class="ha-img-container">
-          <img class="ha-main-image" src="/images/shopping.jpg" alt="" />
+              <div class="h-input-text">
+                <label>Password</label>
+                <input type="password" placeholder="***************" />
+              </div>
+              <div class="login-check">
+                <div class="login-check-label">
+                  <input
+                    type="checkbox"
+                    name="consent"
+                    id="consent"
+                    value="remember"
+                  />
+                  <label for="consent">I accept all Terms & Conditions</label>
+                </div>
+              </div>
+              <button class="btn btn-primary">Create New Account</button>
+              <div class="login-bottom-text">
+                <a href="/login_page.html">
+                  Already have an account
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </form>
+          </div>
         </div>
       </main>
-      <nav class="h-home-belowimg">
-        <div class="below-image-container">
-          <div class="h-image-wrapper">
-            <div class="below-imgone">
-              <img src="/images/Jeans1.JPG" alt="" />
-            </div>
-            <div class="below-img-text">
-              <h3>NEW ARRIVALS</h3>
-              <p>Winter Collection</p>
-              <p>
-                Check out our best Winter Collection to stay warm in style this
-                season
-              </p>
-            </div>
-          </div>
-          <div class="h-image-wrapper">
-            <div class="below-imgone">
-              <img src="/images/Jeans1.JPG" alt="" />
-            </div>
-            <div class="below-img-text">
-              <h3>NEW ARRIVALS</h3>
-              <p>Winter Collection</p>
-              <p>
-                Check out our best Winter Collection to stay warm in style this
-                season
-              </p>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <footer class="ha-footer">
+      <footer class="ha-footer-gtr">
         <div class="footer-heading">Social Media Presence</div>
         <ul class="ha-footer-icons">
           <li class="ha-footer-icons social-icon">

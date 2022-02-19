@@ -132,6 +132,13 @@ p {
   }
 
   .h-price-box {
-    width: 60%;
+    width: 80%;
+  }
+
+  .blank-div {
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .price-comment {
+    line-height: 1;
   }
 }

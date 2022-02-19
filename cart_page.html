@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Cart</title>
     <link
       rel="stylesheet"
       href="https://pandaui.netlify.app/components/pandaui.css"
     />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/cart_page.css" />
 
     <link
       rel="stylesheet"
@@ -20,7 +21,7 @@
     />
   </head>
   <body>
-    <div class="ha-login-content">
+    <div class="ha-cart-content">
       <header class="ha-header-gtr">
         <div class="ha-logo">
           <a href="/index.html"><img src="/images/logo.png" alt="" /></a>
@@ -63,41 +64,55 @@
           </div>
         </div>
       </header>
-      <main class="ha-login-gtr">
-        <div class="ha-login-window">
-          <div class="h-login-container">
-            <h2>Login</h2>
-            <form action="inputs">
-              <div class="h-input-text">
-                <label>Email address</label>
-                <input type="text" placeholder="xyz@email.com" />
+      <main class="ha-cart-gtr">
+        <div class="cart-heading">
+          <h3>MY CART (2)</h3>
+        </div>
+        <div class="h-cart-container">
+          <div class="h-imagecart-wrapper">
+            <div class="image-cart">
+              <img src="/images/Jeans1.JPG" alt="" />
+            </div>
+            <div class="image-text">
+              <h3>Jeans</h3>
+              <p>Washed Slim Fit Jeans Offer</p>
+              <p>Price: Rs. 12,60</p>
+              <p>55%off</p>
+              <p>Quantity:</p>
+              <div class="image-cart-btn">
+                <button class="remove-btn">Remove From Cart</button>
+                <button class="move-btn">Move to Wishlist</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="h-price-box">
+            <div class="cart-price">PRICE DETAILS</div>
+            <div class="blank-div"></div>
+            <div class="h-prices">
+              <div class="item-pricee">
+                <p>Price (2 items)</p>
+                <p>Rs 4999</p>
+              </div>
+              <div class="item-pricee">
+                <p>Price (2 items)</p>
+                <p>Rs 4999</p>
+              </div>
+              <div class="item-pricee">
+                <p>Price (2 items)</p>
+                <p>Rs 4999</p>
               </div>
 
-              <div class="h-input-text">
-                <label>Password</label>
-                <input type="password" placeholder="***************" />
+              <div class="blank-div"></div>
+              <div class="item-pricee">
+                <p class="total-price">TOTAL AMOUNT</p>
+                <p>Rs 3499</p>
               </div>
-              <div class="login-check">
-                <div class="login-check-label">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    id="consent"
-                    value="remember"
-                  />
-                  <label for="consent">Remember me</label>
-                </div>
-                <div>
-                  <a href="#">Forgot Your Password ?</a>
-                </div>
-              </div>
-              <button class="btn btn-primary">Login</button>
-              <div class="login-bottom-text">
-                <a href="/signup_page.html">
-                  Create New Account <i class="fas fa-chevron-right"></i
-                ></a>
-              </div>
-            </form>
+
+              <div class="blank-div"></div>
+              <div>You will save Rs1999 on this order</div>
+              <button class="remove-btn price-btn">PLACE ORDER</button>
+            </div>
           </div>
         </div>
       </main>

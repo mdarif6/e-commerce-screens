@@ -1,8 +1,9 @@
 @import url(color.css);
 @import url(product_page.css);
 @import url(login_page.css);
+@import url(wishlist_page.css);
+@import url(cart_page.css);
 @import url(signup_page.css);
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
@@ -14,7 +15,6 @@
 
 .ha-content > * {
   padding: 0.625rem;
-  text-align: center;
   text-align: center;
 }
 
@@ -36,7 +36,6 @@
 /* Header */
 
 .ha-header {
-  padding-left: 3rem;
   grid-area: header;
   align-items: center;
   justify-content: center;
@@ -48,8 +47,11 @@
 .ha-header div:last-child {
   margin-left: auto;
 }
+.ha-logo {
+  padding-left: 2rem;
+}
 .ha-logo img {
-  width: 80px;
+  width: 4rem;
 }
 .ha-logo a {
   font-weight: bold;
@@ -83,21 +85,31 @@
 }
 
 .ha-nav-icons {
+  padding: 0 1rem 0 1rem;
   cursor: pointer;
-  font-size: 1.5rem;
   display: flex;
-
   gap: 1.25rem;
   align-items: center;
   justify-content: space-between;
 }
 
+.ha-nav-icons i {
+  font-size: 2rem;
+}
 .ha-nav-icons a {
   color: var(--ha-icon-colr);
 }
+
+.badge-number {
+  position: absolute;
+  font-size: 0.8rem;
+  top: 0.5rem;
+  left: 1.4rem;
+}
+
 .ha-nav-btn {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   background-color: var(--ha-primary-color);
   color: var(--ha-white-color);
   cursor: pointer;
@@ -213,15 +225,9 @@
 /* Media Queries */
 
 @media only screen and (max-width: 800px) {
-  .ha-content {
-    grid-template-areas:
-      "header header header header header header"
-      "section section section section section section"
-      " main main main main main main"
-      "nav nav nav nav nav nav"
-      "footer footer footer footer footer footer";
+  .h-categ-text {
+    font-size: 1.5rem;
   }
-
   .ha-search-box {
     display: none;
   }

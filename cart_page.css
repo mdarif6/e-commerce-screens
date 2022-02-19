@@ -2,7 +2,6 @@
   padding: 0.625rem;
   text-align: center;
 }
-
 .ha-cart-content {
   position: relative;
   margin: 0 auto;
@@ -11,7 +10,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content auto min-content;
 }
-
 .ha-cart-gtr {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -20,7 +18,6 @@
 .cart-heading {
   padding: 1rem;
 }
-
 .h-cart-container {
   justify-content: center;
 
@@ -28,7 +25,6 @@
   align-items: flex-start;
   gap: 0.625rem;
 }
-
 .h-cart-container {
   justify-content: center;
   display: flex;
@@ -38,7 +34,6 @@
   display: flex;
   background-color: var(--ha-white-color);
 }
-
 .image-cart img {
   width: 100%;
 }
@@ -57,19 +52,16 @@ p {
   flex-direction: column;
   padding-top: 0.5rem;
 }
-
 .image-cart-btn button {
   padding: 0.5rem;
   margin-top: 0.5rem;
 }
-
 .remove-btn {
   cursor: pointer;
   background-color: var(--ha-primary-color);
   color: var(--ha-white-color);
   border: none;
 }
-
 .move-btn {
   cursor: pointer;
   background-color: var(--ha-white-color);
@@ -86,7 +78,6 @@ p {
   padding: 1.5rem;
   line-height: 3rem;
 }
-
 .item-pricee {
   display: flex;
   flex-direction: row;
@@ -94,18 +85,15 @@ p {
 .total-price {
   font-weight: bold;
 }
-
 .item-pricee p:last-child {
   margin-left: auto;
 }
 .cart-price {
   font-weight: bold;
 }
-
 .blank-div {
   border: 1px solid var(--ha-gray-color);
 }
-
 .price-btn {
   width: 100%;
   padding: 0.5rem;

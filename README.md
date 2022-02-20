@@ -18,6 +18,15 @@ An Ecommerce platform to buy latest design apparel built using HTML and CSS only
 
 [H&A clothing Live](https://h-a-clothing.netlify.app/)
 
+## Pages included in E-commerce App.
+
+- Home Page
+- Product Page
+- WishList Page
+- Cart Page
+- Login Page
+- Signup Page
+
 ## Run Locally
 
 Clone the project
@@ -38,23 +47,4 @@ Start the server
   open index.html file
 ```
 
-# Authors
-
 - [@ MdArif](https://github.com/mdarif6/)
-
-## 🚀 About Me
-
-I'm currently working as a Systems Administrator
-and Learning Web Development.
-
-## 🛠 Skills
-
-Javascript, HTML, CSS and ReactJS
-
-## 🔗 Links
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://mdarif.netlify.app/)
-
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mdarifdev/)
-
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/mdarifdev)

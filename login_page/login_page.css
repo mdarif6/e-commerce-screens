@@ -63,7 +63,7 @@
 
 .login-bottom-text a {
   text-decoration: none;
-  color: var(--ha-login-btn-color);
+  color: var(--ha-secondary-color);
 }
 .h-input-text input {
   width: 100%;
@@ -86,16 +86,16 @@
 
 .login-check a {
   text-decoration: none;
-  color: var(--ha-login-btn-color);
+  color: var(--ha-secondary-color);
 }
 
 .btn-primary {
   width: 100%;
   font-size: 1rem;
-  background-color: var(--ha-login-btn-color);
+  background-color: var(--ha-primary-color);
 }
 .btn-primary:hover {
-  background-color: var(--ha-login-btn-hover-color);
+  background-color: var(--ha-secondary-color);
 }
 .login-bottom-text {
   display: flex;

@@ -124,7 +124,7 @@
 /* Media Query for responsiveness */
 @media only screen and (max-width: 800px) {
   .h-login-container {
-    width: 12.5rem;
+    width: 16rem;
   }
   .h-input-text input {
     width: 80%;
@@ -139,6 +139,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .h-input-text label,
   .login-check,
   .login-check-label input,

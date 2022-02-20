@@ -1,9 +1,9 @@
 @import url(color.css);
-@import url(product_page.css);
-@import url(login_page.css);
-@import url(wishlist_page.css);
-@import url(cart_page.css);
-@import url(signup_page.css);
+@import url(./product_page/product_page.css);
+@import url(./login_page/login_page.css);
+@import url(./wishlist_page/wishlist_page.css);
+@import url(./cart_page/cart_page.css);
+@import url(./signup_page/signup_page.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 * {
@@ -264,6 +264,7 @@
   }
 
   .below-img-text {
+    gap: 1rem;
     padding-top: 1rem;
   }
 

@@ -2,7 +2,7 @@
 
 ![Logo](/images/Logo_ScreenShot.png)
 
-An Ecommerce platform to buy latest design apparel built using HTML and CSS only.
+An Ecommerce platform to buy latest design apparel built using HTML and CSS only. And it is responsive too.
 
 # Screenshots
 
@@ -22,10 +22,11 @@ An Ecommerce platform to buy latest design apparel built using HTML and CSS only
 
 - Home Page
 - Product Page
-- WishList Page
+- Wishlist Page
 - Cart Page
 - Login Page
 - Signup Page
+- Signout on wishlist page
 
 ## Run Locally
 
